@@ -1,0 +1,126 @@
+.programming-tech-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.service-card-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.services-section {
+  padding: 20px;
+}
+
+.category-section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.services-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.service-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.service-card p {
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.all-services {
+  margin-left: 250px; /* Space for sidebar */
+  transition: margin-left 0.3s ease; /* Smooth transition */
+}
+
+/* Sidebar styles */
+.sidebar {
+  transition: transform 0.3s ease;
+  position: fixed;
+  top: 120px;
+  left: 0; /* Keep sidebar at left */
+  height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  width: 250px; 
+}
+
+.sidebar.open {
+  transform: translateX(0); /* Show when open */
+}
+
+/* Toggle button styles */
+.toggle-sidebar {
+  margin-top: 60px;
+  display: none; /* Hidden by default */
+}
+
+/* Responsive styles */
+@media screen and (min-width: 1440px) {
+  .sidebar {
+    left: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .toggle-sidebar {
+    display: block; /* Show on small screens */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  .sidebar {
+    width: 200px; /* Adjust sidebar width for mobile */
+    transform: translateX(-100%);
+  }
+
+  .all-services {
+    margin-left: 0; /* No margin when sidebar is hidden */
+  }
+
+  .all-services.expanded {
+    margin-left: 200px; /* Space when sidebar is open */
+  }
+}

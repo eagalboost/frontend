@@ -1,0 +1,59 @@
+.orders-page {
+  color: #ededed; 
+  background-color: #1e1e1e; 
+  padding: 20px;
+}
+
+.orders-page h2 {
+  color: #f1f1f1;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid #444; 
+  padding: 10px;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #333; 
+  color: #ffffff;
+}
+
+.orders-table td {
+  background-color: #2a2a2a; 
+}
+
+.orders-table tr:hover {
+  background-color: #3a3a3a; 
+}
+
+.orders-table img {
+  border-radius: 5px;
+}
+
+.orders-page a.order-btn {
+  color: #ededed;
+  background-color: #232323;
+  border: 1px solid #555;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.orders-page a.order-btn:hover {
+  background-color: #383838;
+  border-color: #666;
+}
+.message-icon {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.5rem;
+}

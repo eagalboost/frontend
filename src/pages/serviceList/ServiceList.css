@@ -1,0 +1,138 @@
+/* Toggle sidebar button */
+.service-list__toggle-sidebar {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.service-list__toggle-sidebar:hover {
+    background-color: #333;
+}
+
+/* Container styles */
+.service-list__container {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #121212;
+    color: #fff;
+    flex-grow: 1;
+}
+
+/* Title styles */
+.service-list__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Grid for services */
+.service-list__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Card styles */
+.service-list__card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.service-list__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styles */
+.service-list__image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Service title styles */
+.service-list__service-title {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Description styles */
+.service-list__desc {
+    font-size: 14px;
+    margin: 0 10px 10px;
+    text-align: center;
+    color: #ccc;
+}
+
+/* Stats styles */
+.service-list__stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #333;
+}
+
+/* Rating styles */
+.service-list__rating {
+    display: flex;
+    align-items: center;
+}
+
+/* Star icon styles */
+.service-list__star-icon {
+    color: gold;
+    margin-right: 5px;
+}
+
+/* Star number styles */
+.service-list__star-number {
+    font-size: 14px;
+}
+
+/* Sales styles */
+.service-list__sales {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Price styles */
+.service-list__price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* No services message styles */
+.service-list__no-services {
+    text-align: center;
+    color: #ccc;
+    font-size: 18px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .service-list__toggle-sidebar {
+        display: block; /* Show button on mobile */
+    }
+
+    .service-list__container {
+        width: 100%; /* Full width on mobile */
+        margin-left: 0; /* No margin */
+    }
+}
+
+@media (min-width: 769px) {
+    .service-list__toggle-sidebar {
+        display: none; /* Hide button on desktop */
+    }
+}

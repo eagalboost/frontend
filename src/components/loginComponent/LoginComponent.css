@@ -1,0 +1,78 @@
+/* RegisterComponent.css */
+:root {
+  --color-primary: rgb(232, 0, 151);
+  --color-white: #ededed;
+  --color-hover: rgb(119, 24, 86);
+  --color-neon-sion: rgba(0, 220, 238, 0.8);
+  --color-neon-pink: rgba(232, 0, 151, 0.8);
+  --color-neon-pink-dark: #e6006d;
+}
+
+.login-header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-link {
+  text-decoration: underline;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  margin: 20px auto;
+  z-index: 1001;
+  overflow: hidden;
+  background-image: url("../../assets/noise.svg");
+  background-blend-mode: multiply, overlay;
+  background-size: cover;
+  filter: contrast(1) brightness(1);
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: var(--color-neon-pink);
+  box-shadow: 0 0 8px var(--color-neon-pink), 0 0 20px var(--color-neon-pink);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--color-neon-pink); /* Neon pink color */
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: var(--color-neon-pink-dark);
+  box-shadow: 0 0 8px var(--color-neon-pink), 0 0 20px var(--color-neon-pink);
+}
+
+.login-btn:active {
+  box-shadow: 0 0 8px var(--color-neon-pink), 0 0 20px var(--color-neon-pink);
+}
+
+.login-pera {
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+}

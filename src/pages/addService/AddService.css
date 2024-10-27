@@ -1,0 +1,128 @@
+:root {
+  --color-primary: rgb(232, 0, 151);
+  --color-white: #ededed;
+  --color-hover: rgb(119, 24, 86);
+  --color-gray-light: #f0f0f0;
+  --color-gray-dark: #707070;
+  --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-service {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.add-service-container {
+  padding: 30px;
+  max-width: 800px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.add-service-container h1 {
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.add-service-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-service-form label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: var(--color-gray-dark);
+}
+
+.add-service-form input,
+.add-service-form select,
+.add-service-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid var(--color-gray-dark);
+  border-radius: 4px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.add-service-form input:focus,
+.add-service-form select:focus,
+.add-service-form textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.add-service-btn {
+  padding: 15px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.add-service-btn:hover {
+  background-color: var(--color-hover);
+}
+
+.success-message,
+.error-message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.success-message {
+  background-color: green;
+  color: white;
+}
+
+.error-message {
+  background-color: red;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .add-service-container {
+    padding: 20px;
+  }
+
+  .add-service-btn {
+    font-size: 14px;
+  }
+
+  .add-service-form input,
+  .add-service-form select,
+  .add-service-form textarea {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .add-service-container {
+    padding: 15px;
+  }
+
+  .add-service-btn {
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .add-service-form label {
+    font-size: 12px;
+  }
+}

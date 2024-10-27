@@ -1,0 +1,72 @@
+:root {
+    --color-neon-purple: rgba(180, 0, 255, 0.8);
+  }
+  
+  #digital-marketing-hero {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 100;
+    position: relative;
+    margin-top: 40px;
+    overflow: hidden;
+    background-image: url("../../assets/noise.svg");
+    background-blend-mode: multiply, overlay;
+    background-size: cover;
+    filter: contrast(1) brightness(1);
+  }
+  
+  #digital-marketing-hero::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    height: 500px;
+    width: 500px;
+    background: radial-gradient(
+      circle,
+      var(--color-neon-purple),
+      rgba(0, 0, 0, 0) 70%
+    );
+    filter: blur(10px);
+    z-index: -1;
+    animation: moveBefore 10s ease-in-out infinite;
+  }
+  
+  #digital-marketing-hero::after {
+    content: "";
+    position: absolute;
+    bottom: -200px;
+    right: -150px;
+    height: 500px;
+    width: 500px;
+    background: radial-gradient(
+      circle,
+      var(--color-neon-pink),
+      rgba(0, 0, 0, 0) 70%
+    );
+    filter: blur(10px);
+    z-index: -1;
+    animation: moveAfter 10s ease-in-out infinite;
+  }
+  
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+  
+  .main-header p {
+    font-size: 1.4rem;
+  }
+  
